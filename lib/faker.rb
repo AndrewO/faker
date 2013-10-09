@@ -101,7 +101,7 @@ module Faker
           text = prefix
 
           # If the class has the method, call it, otherwise
-          # fetch the transation (i.e., faker.name.first_name)
+          # fetch the translation (i.e., faker.name.first_name)
           text += cls.respond_to?(meth) ? cls.send(meth) : fetch("#{(kls || self).to_s.split('::').last.downcase}.#{meth.downcase}")
 
           # And tack on spaces, commas, etc. left over in the string
@@ -158,6 +158,7 @@ require 'faker/business'
 require 'faker/commerce'
 require 'faker/version'
 require 'faker/number'
+require 'faker/government'
 
 require 'extensions/array'
 require 'extensions/symbol'

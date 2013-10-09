@@ -1,5 +1,70 @@
 en:
   faker:
+    government:
+      bill_number:
+        - "S. ####"
+        - "S.J. Res. ####"
+        - "S. Con. Res. ####"
+        - "H.R. ####"
+        - "H.J. Res. ####"
+        - "H. Con. Res. ####"
+      vote_name:
+        - "On Passage of the Bill in the Senate"
+        - "On Passage of the Bill in the House"
+        - "On the Resolution in the Senate"
+        - "On the Resolution in the House"
+        - "On Ordering the Previous Question"
+        - "On Motion to Suspend the Rules and Agree in the Senate"
+        - "On Motion to Suspend the Rules and Agree in the House"
+        - "On Motion to Table the Appeal of the Ruling of the Chair"
+        - "On Motion to Suspend the Rules and Pass, as Amended in the Senate"
+        - "On Motion to Suspend the Rules and Pass, as Amended in the House"
+      chamber:
+        - House
+        - Senate
+      vote_number: "#{chamber} Vote #{vote_num}"
+      interest_group:
+        - "#{adjective} #{group} #{stance} #{what}"
+        - "#{group} #{stance} #{what}"
+      adjective:
+        - National
+        - United
+        - Federated
+        - American
+        - Patriotic
+        - Progressive
+      group:
+        - Americans
+        - Democrats
+        - Republicans
+        - Lawyers
+        - Mothers
+        - Service Workers
+        - Architects
+        - Builders
+        - Doctors
+        - Veterans
+        - Service Members
+        - Patriots
+        - Progressives
+        - Retirees
+      stance:
+        - for
+        - against
+      what:
+        - Obamacare
+        - Afordable Healthcare
+        - Responsible Gun Use
+        - Gun Control
+        - Bears
+        - America
+        - Prosperity
+        - Growth
+        - Sequestration
+        - Drunk Driving
+        - Progress
+        - Freedom
+
     address:
       city_prefix: [North, East, West, South, New, Lake, Port]
       city_suffix: [town, ton, land, ville, berg, burgh, borough, bury, view, port, mouth, stad, furt, chester, mouth, fort, haven, side, shire]
@@ -40,7 +105,7 @@ en:
         - "#{Name.last_name} #{suffix}"
         - "#{Name.last_name}-#{Name.last_name}"
         - "#{Name.last_name}, #{Name.last_name} and #{Name.last_name}"
-          
+
     internet:
       free_email: [gmail.com, yahoo.com, hotmail.com]
       domain_suffix: [com, biz, info, name, net, org]
@@ -76,8 +141,8 @@ en:
 
     commerce:
       color: [red, green, blue, yellow, purple, mint green, teal, white, black, orange, pink, grey, maroon, violet, turquoise, tan, sky blue, salmon, plum, orchid, olive, magenta, lime, ivory, indigo, gold, fuchsia, cyan, azure, lavender, silver]
-      department: ["Books", "Movies, Music & Games", "Electronics & Computers", "Home, Garden & Tools", "Grocery, Health & Beauty", "Toys, Kids & Baby", "CLothing, Shoes & Jewelery", "Sports & Outdoors", "Automotive & Industrial"] 
+      department: ["Books", "Movies, Music & Games", "Electronics & Computers", "Home, Garden & Tools", "Grocery, Health & Beauty", "Toys, Kids & Baby", "CLothing, Shoes & Jewelery", "Sports & Outdoors", "Automotive & Industrial"]
       product_name:
         adjective: [Small, Ergonomic, Rustic, Intelligent, Gorgeous, Incredible, Fantastic, Practical, Sleek, Awesome]
-        material: [Steel, Wooden, Concrete, Plastic, Cotton, Granite, Rubber] 
+        material: [Steel, Wooden, Concrete, Plastic, Cotton, Granite, Rubber]
         product: [Chair, Car, Computer, Gloves, Pants, Shirt, Table, Shoes, Hat]
